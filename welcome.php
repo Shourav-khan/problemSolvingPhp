@@ -121,11 +121,29 @@
                                                     
                     function swap($maya){
 
-                        return strlen ($maya) > 1 ?  substr($maya, strlen($maya)-1) . substr($maya,1,strlen($maya)-2)  : $maya ;
+                        return strlen ($maya) > 1 ?  substr($maya, strlen($maya)-1) . substr($maya,1,strlen($maya)-2) . substr($maya, 0,1) : $maya ;
 
                     }
+
+                    // echo swap("nos");
+
+
+
+            //    Write a PHP program to check two given integers 
+            //    whether either of them is in the range 100..200 inclusive.    
                     
+            function rangeHas($r,$t){
+
+                return  ($r >= 100 && $r <= 200 || $t >=100 && $t <= 200);
+            }
+                    // var_dump(rangeHas(100,150)); 
+
+
+                  function hasRange3($r,$t,$e){
+
                     
+
+                  }  
 
 
     ?>
