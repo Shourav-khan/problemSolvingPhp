@@ -139,11 +139,17 @@
                     // var_dump(rangeHas(100,150)); 
 
 
-                  function hasRange3($r,$t,$e){
+                  function hasRange3($r,$t){
 
-                    
+                    return ($r >= 20 && $r <= 50 || $t >= 20 && $t <= 50);
 
                   }  
+
+                //   var_dump(hasRange3(50, 19));
+
+
+                
+
 
 
     ?>
