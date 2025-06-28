@@ -101,7 +101,7 @@
 
                         if(strlen($r) >= 2 && substr($r, 0,2) == "if"){
 
-                            return $r;
+                            return $r; 
 
                         }
 
@@ -112,12 +112,12 @@
                     // echo prepand("if aiodhoid ");
 
 
-//  Write a PHP program to exchange the first and last characters 
-//  in a given string and return the new string.
-// Sample Input:
-// "abcd"
-// "a"
-// "xy"    
+                //  Write a PHP program to exchange the first and last characters 
+                //  in a given string and return the new string.
+                // Sample Input:
+                // "abcd"
+                // "a"
+                // "xy"    
                                                     
                     function swap($maya){
 
@@ -196,7 +196,7 @@
             // echo nearest100(60,70);
 
 
-            
+
 
 
 
