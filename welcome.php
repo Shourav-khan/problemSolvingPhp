@@ -148,7 +148,57 @@
                 //   var_dump(hasRange3(50, 19));
 
 
-                
+                function twoRange($r,$t){
+
+                    return ($r >= 20 && $r <= 50 || $t >= 20 && $t <= 50);
+
+                }
+
+
+                // var_dump(twoRange(10, 19));
+
+
+                // Remove "yt" from Index 1
+                // Write a PHP program to check if a string 'yt' appears at index 1 in a given string. If it appears return a string without 'yt' otherwise return the original string.
+                // Sample Input:
+                // "Python"
+                // "ytade"
+                // "jsues"
+
+
+            function yt($s){
+
+                return substr( $s,1,2 ) == "yt" ? substr($s, 0, 1 ) . substr($s, 3,strlen($s)-2) : $s;
+            }
+
+            // echo yt("yt");
+
+
+            // Write a PHP program to check which number nearest to the value 100 among two given integers. 
+            // Return 0 if the two numbers are equal.
+            // Sample Input:
+            // 78, 95
+            // 95, 95
+            // 99, 70
+
+
+            function nearest100($r,$t){
+
+                $x = 100;
+
+                $val = abs($r - $x);  
+                $val2 = abs($t - $x); 
+
+                return $val == $val2 ? 0 : ($val < $val2 ? $r : $t);
+
+            }
+
+            // echo nearest100(60,70);
+
+
+            
+
+
 
 
 
