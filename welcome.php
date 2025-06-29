@@ -89,12 +89,12 @@
 
 
 
-        // Write a PHP program to create a new string where 'if' is added to the front of a given string. 
-        // If the string already begins with 'if', return the string unchanged.
-        // Sample Input:
-        // "if else"
-        // "else"
-        // "if"
+                // Write a PHP program to create a new string where 'if' is added to the front of a given string. 
+                // If the string already begins with 'if', return the string unchanged.
+                // Sample Input:
+                // "if else"
+                // "else"
+                // "if"
 
 
                     function prepand($r){
@@ -194,6 +194,115 @@
             }
 
             // echo nearest100(60,70);
+
+
+
+        // Write a PHP program to find the larger value from two positive integer values that is in the range 20.
+        // .30 inclusive, or return 0 if neither is in that range.
+        // Sample Input:
+        // 78, 95
+        // 20, 30
+        // 21, 25
+        // 28, 28
+
+
+            function largestRange($r, $t){
+
+                if( $r >= 20 &&  $r <= 30 || $t >= 20 &&  $t <= 30){
+
+                    if($r >= $t){
+                        return $r;
+                    }else{
+                        return $t; 
+                    }
+
+                } elseif($r >= 20 &&  $r <= 30){
+                    return $r; 
+                }elseif($t >= 20 &&  $t <= 30){
+                    return $t; 
+
+            } else {
+                return ("oi korsos ki? hoy nai to input dewa."); 
+            }
+        }
+
+
+        // echo largestRange(200,250);  
+
+            // Write a PHP program to check if two given non-negative integers have the same last digit.
+            // Sample Input:
+            // 123, 456
+            // 12, 512
+            // 7, 87
+            // 12, 45
+
+
+        function lastDgtSame($r,$t){
+
+
+            return abs($r % 10) == abs($t % 10);
+
+        }
+
+        // var_dump(lastDgtSame(27,37));
+
+
+        //  Write a PHP program to convert the last 3 characters of a given string in upper case. 
+        //         If the length of the string has less than 3 then uppercase all the characters.
+        // Sample Input:
+        // "Python"
+        // "Javascript"
+        // "js"
+        // "PHP"
+
+        function lastUpperCase($r){
+
+            if(strlen($r) < 3){
+
+                return strtoupper($r);
+
+            }else {
+                $first_part = substr($r,0, strlen($r)-3);
+                $last_part =  strtoupper(substr($r, strlen($r)-3));
+
+                 return $first_part . $last_part;
+            }
+
+        }
+
+        // echo lastUpperCase("lenovo");
+
+
+
+//  Write a PHP program to create a new string which is n (non-negative integer) 
+//  copies of the the first 3 characters of a given string. 
+//   If the length of the given string is less than 3 then return n copies of the string.
+// Sample Input:
+// "Python", 2
+// "Python", 3
+// "JS", 3
+
+
+        function nCopyofChar($s, $n){
+
+            $fakastring = "";
+
+            $prothom3tachar = 3;
+
+            if($prothom3tachar > strlen($s)){
+
+                $prothom3tachar = strlen($s); 
+
+            }
+
+        }
+
+
+
+
+
+
+
 
 
 
