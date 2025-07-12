@@ -294,17 +294,61 @@
                 $prothom3tachar = strlen($s); 
 
             }
-
-            
-            
-           
-
-        
+                  
         }
 
+        // Write a PHP program to check a specified number is present in a given array of integers.
 
 
+        function specNumber ($nums, $n){
 
+            foreach($nums as $num){
+
+                 if($num == $n){
+
+                return true;
+
+            }
+
+            return false; 
+
+            }
+
+           
+        }
+
+        // var_dump(specNumber(array(1,2,3,4,5), 9));
+
+
+        // Write a PHP program to check if one of the first 4
+        //  elements in an array of integers is equal to a given element.
+
+            function first4($nums, $n){
+            
+                    if (sizeof($nums) < 4){
+                        $limit = sizeof($nums);
+                    } else {
+
+                        $limit = 4; 
+                    }
+
+                    for($i=0; $i < $limit; $i++){
+
+                        if($nums[$i] == $n){
+
+                           return true; 
+
+                        }
+
+                    }
+
+                     return false; 
+                   
+            }
+
+            
+
+            
 
 
 
