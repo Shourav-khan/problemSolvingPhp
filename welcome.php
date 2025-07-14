@@ -346,7 +346,30 @@
                    
             }
 
-            
+            // var_dump(first4(array(1,2,3,4,5,6),9)); 
+
+
+            // Write a PHP program to check whether the sequence of numbers 1, 2, 3 appears in 
+            // a given array of integers somewhere.
+
+
+            function sequenceMtch($nums){
+
+                for ($i = 0; $i < sizeof($nums)-2; $i++){
+
+                    if($nums[$i] == 1 && $nums[$i+1] == 2 && $nums[$i+2] == 3){
+
+                        return true;
+
+                    }
+                    return false;
+
+                }
+
+            }
+
+            var_dump(sequenceMtch(array(1,2,4,45,5,6,7)));
+
 
             
 
