@@ -18,10 +18,20 @@
         // 2, 2
           function ektaFunc($n,$m){
 
-                return $n==$m ? ($n+$m)*3 : ($n+$m); 
+                // return $n==$m ? ($n+$m)*3 : ($n+$m); 
+
+                if ($n == $m){
+
+                    return ($n*$m)*3 ; 
+
+                }else{
+                    return $n*$m ; 
+                }
+
+
           }
 
-        //   echo ektaFunc(10,5);
+        //    echo ektaFunc(1,5);
 
 
             // Write a PHP program to get the absolute difference between n and 51. 
@@ -121,7 +131,25 @@
                                                     
                     function swap($maya){
 
-                        return strlen ($maya) > 1 ?  substr($maya, strlen($maya)-1) . substr($maya,1,strlen($maya)-2) . substr($maya, 0,1) : $maya ;
+                        // return strlen ($maya) > 1 ?  substr($maya, strlen($maya)-1) . substr($maya,1,strlen($maya)-2) . substr($maya, 0,1) : $maya ;
+
+
+                        if (strlen($maya) > 1 ){
+
+                            $lastpart = substr($maya, strlen($maya) - 1);
+                            $firspart = substr($maya,0,1);
+                            $middlepart = substr($maya, 1, strlen($maya)-2);
+
+                            return $lastpart . $middlepart . $firspart; 
+
+                        }else {
+
+                            return $maya; 
+
+                        }
+
+                        
+
 
                     }
 
@@ -368,7 +396,7 @@
 
             }
 
-            var_dump(sequenceMtch(array(1,2,4,45,5,6,7)));
+            // var_dump(sequenceMtch(array(1,2,4,45,5,6,7)));
 
 
             
